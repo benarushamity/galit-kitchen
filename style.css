@@ -1,0 +1,1892 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.d1 {
+    width: 100%;
+    height: 240px;
+}
+
+.mainpic {
+    width: 100%;
+    height: 1000px;
+    background-image: url(image/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.mainpic h1 {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 120px;
+    color: #FFFF;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', cursive;
+    font-stretch: ultra-condensed;
+    z-index: 1;
+    position: absolute;
+}
+
+.mainpic h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 19%;
+    color: #ffff;
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+}
+
+.open {
+    width: 130px;
+    height: 90px;
+    background-color: #f44336;
+    position: absolute;
+    right: 280px;
+    top: -90px;
+    z-index: 3;
+}
+
+.close {
+    width: 130px;
+    display: block;
+    height: 90px;
+    background-color: #f44336;
+    position: absolute;
+    right: 325px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 0, 0.47);
+    top: 180px;
+    z-index: 3;
+}
+
+.opena {
+    color: yellow;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.opena::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 63px;
+    transition: 0.6s;
+}
+
+.opena:hover::after {
+    margin-left: 46%;
+    width: 52%;
+}
+
+.opena2 {
+    color: yellow;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 4px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.opena2::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 38px;
+    transition: 0.6s;
+}
+
+.opena2:hover::after {
+    margin-left: 46%;
+    width: 52%;
+}
+
+.opena3 {
+    color: yellow;
+    margin-right: 5px;
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 4px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.opena3::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    transition: 0.6s;
+}
+
+.opena3:hover::after {
+    margin-left: 46%;
+    width: 52%;
+}
+
+.logo {
+    width: 380px;
+    margin-left: 0px;
+}
+
+.cashrot {
+    margin-top: 100px;
+    margin-right: 0px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #d80e0e;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu {
+    width: 92%;
+    height: 200px;
+    padding: 20px 0;
+    margin-right: 0;
+    margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    margin: 0 20px;
+    display: inline-block;
+    list-style: none;
+    margin-top: 100px;
+    position: relative;
+    transform: 1s;
+}
+
+.menu ul li h1 {
+    color: yellow;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.fa-caret-down {
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    margin-top: 102px;
+    margin-left: 3px;
+}
+
+.fa-minus {
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    margin-top: 102px;
+    margin-left: 3px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.menu ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+}
+
+.catalog {
+    width: 100%;
+    height: 70vh;
+    background-image: radial-gradient(rgba(30, 45, 60, 0.5), rgba(30, 45, 60, 0.5)), url(image/imgbackground.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    font-size: 60px;
+}
+
+html {
+    overflow: auto;
+}
+
+body {
+    background-color: rgb(35, 37, 38);
+}
+
+nav .fa-times {
+    display: none;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+.openm {
+    display: none;
+}
+
+.closem {
+    display: none;
+}
+
+@media all and (max-width:1730px) {
+    .mainpic {
+        height: 700px;
+    }
+}
+
+@media all and (max-width:1600px) {
+    .close {
+        right: 300px;
+    }
+}
+
+@media all and (max-width:1300px) {
+    .d1 {
+        height: 210px;
+    }
+
+    .close {
+        top: 165px;
+    }
+
+    .mainpic h2 {
+        position: absolute;
+        text-align: center;
+        font-size: 65px;
+        padding-top: 23%;
+        color: #ffff;
+        font-weight: 600;
+        font-family: 'Bebas Neue', cursive;
+        z-index: 1;
+    }
+
+    .cashrot {
+        top: 30px;
+        margin-left: 80%;
+        position: fixed;
+        margin-top: 0px;
+    }
+
+    .menu {
+        height: 170px;
+    }
+
+    .logo {
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .mainpic {
+        height: 500px;
+    }
+}
+
+@media all and (max-width:1053px) {
+    .d1 {
+        height: 190px;
+    }
+
+    .menu ul li {
+        margin: 0 30px;
+        margin-top: 50px;
+    }
+
+    .menu ul li::after {
+        left: 75px;
+    }
+
+    .menu ul li:hover::after {
+        width: 50%;
+    }
+
+    .logo {
+        width: 330px;
+        margin-left: 15%;
+    }
+
+    .menu {
+        padding: 10px 0;
+    }
+
+    .cashrot {
+        margin-left: 60%;
+        top: 100px;
+        position: fixed;
+        margin-top: 0px;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+    .divu {
+        position: absolute;
+        background: #f44336;
+        transition: 1s;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: right;
+        transform: 1s;
+        z-index: 3;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav .fa-bars {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    nav .fa-times {
+        position: absolute;
+        right: 160px;
+        top: 0;
+    }
+
+    .fa-caret-down {
+        position: absolute;
+        top: 245px;
+        right: 160px;
+    }
+
+    .fa-minus {
+        display: none;
+        position: absolute;
+        top: 245px;
+        right: 160px;
+    }
+
+    .open {
+        display: none;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .openm {
+        width: 130px;
+        height: 90px;
+        background-color: #d80e0e;
+        position: absolute;
+        right: 30px;
+        top: -60px;
+        z-index: 4;
+    }
+
+    .closem {
+        width: 100%;
+        display: block;
+        box-shadow: 0px 0px 10px 1px rgba(255, 255, 0, 0.47);
+        top: 180px;
+        height: 90px;
+        background-color: #d80e0e;
+        position: absolute;
+        right: 0x;
+        top: 281px;
+        z-index: 4;
+    }
+
+    .opena {
+        margin-right: 30px;
+    }
+
+    .opena::after {
+        bottom: 62px;
+    }
+
+    .opena:hover::after {
+        margin-left: 50%;
+        width: 40%;
+    }
+
+    .opena2:hover::after {
+        margin-left: 50%;
+        width: 40%;
+    }
+
+    .opena3:hover::after {
+        margin-left: 50%;
+        width: 40%;
+    }
+
+    .opena2 {
+        margin-right: 30px;
+    }
+
+    .opena3 {
+        margin-right: 30px;
+    }
+}
+
+@media all and (max-width:900px) {
+    .mainpic {
+        height: 400px;
+    }
+
+    .mainpic h1 {
+        padding-top: 8%;
+        font-size: 100px;
+    }
+
+    .mainpic h2 {
+        font-size: 45px;
+        padding-top: 23%;
+    }
+}
+
+@media all and (max-width:750px) {
+    .mainpic {
+        height: 350px;
+    }
+
+    .mainpic h1 {
+        padding-top: 8%;
+        font-size: 90px;
+    }
+
+    .mainpic h2 {
+        font-size: 35px;
+        padding-top: 27%;
+    }
+}
+
+@media all and (max-width:550px) {
+    .mainpic {
+        height: 300px;
+    }
+
+    .mainpic h1 {
+        padding-top: 8%;
+        font-size: 75px;
+    }
+
+    .mainpic h2 {
+        font-size: 30px;
+        padding-top: 27%;
+    }
+}
+
+@media all and (max-width:500px) {
+    .mainpic {
+        height: 250px;
+    }
+
+    .mainpic h1 {
+        padding-top: 8%;
+        font-size: 60px;
+    }
+
+    .mainpic h2 {
+        font-size: 23px;
+        padding-top: 29%;
+    }
+}
+
+@media all and (max-width:700px) {
+    .cashrot {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20%;
+    }
+}
+
+@media all and (max-width:600px) {
+    .logo {
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width:500px) {
+    .logo {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-left: 10px;
+    }
+}
+
+.footer {
+    position: a;
+    width: 100%;
+    bottom: 10px;
+    margin-top: 70px;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    
+}
+
+.footer h5 {
+    margin-bottom: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.footer p {
+    margin-bottom: 12px;
+    margin-left: 2.5%;
+    width: 95%;
+}
+
+.icons .fa {
+    color: #fff;
+    font-size: 28px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.footer h5{
+    font-weight: 700;
+}
+.icons .fab {
+    color: #fff;
+    font-size: 28px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+@media all and (max-width:500px) {
+    .footer p {
+        font-size: 13px;
+    }
+.footer h5 {
+        font-size: 20px;
+    
+    }
+    .icons .fa {
+        font-size: 22px;
+    }
+
+    .icons .fab {
+        color: #fff;
+        font-size: 22px;
+    }
+}
+
+.galery-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.galery2 {
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.galery2 hr {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.galery2 h2 {
+    font-size: 3em;
+    color: #ffff;
+    font-weight: 100;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dream {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 24.8%;
+}
+
+.dream img {
+    width: 100%;
+    padding-bottom: 5px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.dream img:hover {
+    transform: scale(1.2);
+}
+
+.boxx {
+    width: auto;
+    height: auto;
+}
+
+.pic {
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+}
+
+.pic3 {
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+}
+
+.pic3 img {
+    width: 40%;
+}
+
+.pic1 {
+    margin-right: 150px;
+}
+
+.tafritim {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.tafritim hr {
+    width: 34%;
+    margin-left: 33%;
+}
+
+.tafritim h2 {
+    font-size: 3em;
+    color: #ffff;
+    font-weight: 100;
+}
+
+.aboutpic {
+    height: 470px;
+    width: 100%;
+    background: url(image/aboutpic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.aboutpic h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 90px;
+    color: #FFFF;
+    font-weight: bolder;
+    font-family: 'Bebas Neue', cursive;
+    font-stretch: ultra-condensed;
+    z-index: 1;
+    position: absolute;
+}
+
+.aboutpic h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 55px;
+    padding-top: 12%;
+    top: 10%;
+    color: #ffff;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+}
+
+.overlay2 {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.aboutdit {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.aboutdit h1 {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 45px;
+}
+
+.aboutdit h2 {
+    text-align: center;
+    align-content: center;
+    position: relative;
+    word-spacing: 2.5px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+}
+
+.bott {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    padding-left: 25%;
+    top: 30px;
+}
+
+.aboutdit hr {
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 70px;
+    height: 2px;
+    background-color: white;
+}
+
+@media all and (max-width:1300px) {
+    .aboutpic {
+        height: 400px;
+    }
+
+    .aboutpic h2 {
+        top: 10%;
+    }
+
+    .aboutdit {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .aboutdit h1 {
+        font-size: 42px;
+    }
+
+    .aboutdit h2 {
+        font-size: 23px;
+        font-weight: 600;
+    }
+}
+
+@media all and (max-width:1130px) {
+    .aboutdit {
+        width: 76%;
+        margin-left: 12%;
+    }
+}
+
+@media all and (max-width:1050px) {
+    .aboutpic {
+        height: 360px;
+    }
+
+    .aboutdit {
+        width: 87%;
+        margin-left: 6.5%;
+    }
+}
+
+@media all and (max-width:1050px) {
+    .aboutpic h2 {
+        top: 18%;
+    }
+}
+
+@media all and (max-width:900px) {
+    .aboutpic {
+        height: 300px;
+    }
+
+    .aboutdit {
+        width: 92%;
+        margin-left: 4%
+    }
+}
+
+@media all and (max-width:800px) {
+    .aboutdit {
+        width: 70%;
+        margin-left: 15%
+    }
+}
+
+@media all and (max-width:700px) {
+    .aboutpic {
+        height: 270px;
+    }
+
+    .aboutpic h1 {
+        padding-top: 4%;
+        font-size: 80px;
+        font-weight: bolder;
+    }
+
+    .aboutpic h2 {
+        font-size: 40px;
+        top: 17%;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width:600px) {
+    .aboutpic {
+        height: 230px;
+    }
+
+    .aboutdit {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .aboutpic h1 {
+        padding-top: 4%;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+
+    .aboutpic h2 {
+        font-size: 35px;
+        top: 22%;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width:600px) {
+    .aboutdit {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .aboutdit h1 {
+        font-size: 35px;
+    }
+
+    .aboutdit h2 {
+        font-size: 20px;
+        word-spacing: 2px;
+        line-height: 23px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .aboutpic {
+        height: 200px;
+    }
+
+    .aboutpic h1 {
+        padding-top: 4%;
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    .aboutpic h2 {
+        font-size: 32px;
+        top: 29%;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width:450px) {
+    .aboutpic {
+        height: 190px;
+    }
+
+    .aboutpic h1 {
+        padding-top: 4%;
+        font-size: 63px;
+        font-weight: 600;
+    }
+
+    .aboutdit {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .aboutpic h2 {
+        font-size: 29px;
+        top: 29%;
+        font-weight: 500;
+    }
+}
+
+@media all and (max-width:400px) {
+    .aboutpic {
+        height: 190px;
+    }
+
+    .aboutdit {
+        width: 98%;
+        margin-left: 1;
+    }
+
+    .aboutdit h1 {
+        font-size: 30px;
+    }
+
+    .aboutdit h2 {
+        font-size: 17px;
+        word-spacing: 2px;
+        line-height: 23px;
+    }
+
+    .aboutpic h1 {
+        padding-top: 4%;
+        font-size: 59px;
+        font-weight: 600;
+    }
+
+    .aboutdit hr {
+        width: 100%;
+        margin-top: 7px;
+        margin-bottom: 50px;
+        height: 1px;
+        background-color: white;
+    }
+
+    .aboutpic h2 {
+        font-size: 29px;
+        top: 29%;
+        font-weight: 500;
+    }
+}
+
+.form {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-color: #f44336;
+    top: 100px;
+    margin-bottom: 150px;
+    left: 35%;
+}
+
+.form h1 {
+    color: yellow;
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%;
+    right: 7px;
+    text-align: right;
+    font-size: 25px;
+    top: 7px;
+}
+
+.form h2 {
+    color: yellow;
+    margin-bottom: 20px;
+    right: 7px;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    font-size: 25px;
+    top: 7px;
+}
+
+@media only screen and (max-width:769px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .dream {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:643px) {
+    .galery2 {
+        width: 100%;
+    }
+
+    .galery2 h2 {
+        font-size: 1em:
+    }
+}
+
+.info {
+    display: flex;
+}
+.infodit {
+    width: 35%;
+    height: 500px;
+    position: relative;
+    background-color: rgb(31, 32, 33);
+    margin-top: 200px;
+    z-index: 1;
+    left: 50%;
+}
+.infodit p {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 33px;
+}
+.infodit h1 {
+    position: relative;
+    top: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.infopic {
+    right: 20%;
+    position: relative;
+    width: 35%;
+    height: 500px;
+    
+}
+.infopic img {
+    
+    position: relative;
+    width: 100%;
+    padding-top: 200px;
+    height: 100%;
+}
+.button {
+    width: 32%;
+    background-color: #d80e0e;
+    height: 65px;
+    right: 34%;
+    top: 345px;
+    position: absolute;
+    z-index: 2;
+}
+.button h1 {
+    color: yellow;
+    font-size: 35px;
+    top: 10px;
+}
+.infodit a {
+    text-decoration: none;
+}
+
+
+.infodit2 {
+    width: 35%;
+    height: 500px;
+    position: relative;
+    background-color: rgb(31, 32, 33);
+    left: 15%;
+    border-color: rgb(31, 32, 33);
+    z-index: 1;
+}
+.infodit2 p {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 33px;
+}
+.infodit2 h1 {
+    position: relative;
+    top: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.infopic2 img {
+    left: 50%;
+    position: absolute;
+    width: 35%;
+    height: 500px;
+}
+.button {
+    width: 32%;
+    background-color: #d80e0e;
+    height: 65px;
+    right: 34%;
+    top: 345px;
+    position: absolute;
+    z-index: 2;
+}
+.button h1 {
+    color: yellow;
+    font-size: 35px;
+    top: 10px;
+}
+.infodit2 a {
+    text-decoration: none;
+}
+
+
+.infodit3 {
+    width: 35%;
+    height: 500px;
+    position: relative;
+    background-color: rgb(31, 32, 33);
+    left: 50%;
+    border-color: rgb(31, 32, 33);
+    z-index: 1;
+}
+.infodit3 p {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 25px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 33px;
+}
+.infodit3 h1 {
+    position: relative;
+    top: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.infopic3 {
+    right: 20%;
+    position: relative;
+    width: 35%;
+    height: 500px;
+    
+}
+.infopic3 img {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.button {
+    width: 32%;
+    background-color: #d80e0e;
+    height: 65px;
+    right: 34%;
+    top: 345px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 0, 0.47);
+}
+.button h1 {
+    color: yellow;
+    font-size: 35px;
+    top: 10px;
+}
+.infodit3 a {
+    text-decoration: none;
+}
+
+.reveal {
+    position: relative;
+    transform: translateX(-800px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateX(-1800px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal2.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal3 {
+    position: relative;
+    transform: translateX(-800px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal3.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+@media all and (max-width:1700px){
+    
+    .infopic{
+        width:36%; 
+        height: 450px;
+        right: 22%;
+    }
+    .infopic2 img{
+        width:36%; 
+        height: 450px;
+        
+    }
+    .infopic3{
+        
+        width:36%; 
+        height: 450px;
+        right: 22%;
+    }
+    
+    .infodit{
+        width:36%; 
+        height: 450px;
+    }
+    .infodit2{
+        width:36%; 
+        height: 450px;
+        left: 14%;
+    }
+    .infodit3{
+        width:36%; 
+        height: 450px;
+    }
+    
+    .button{
+        top: 315px;
+    }
+    
+    
+}
+@media all and (max-width:1600px){
+    
+    .infopic{
+        width:38%; 
+        height: 450px;
+        right: 26%;
+    }
+    .infopic2 img{
+        width:38%; 
+        height: 450px;
+    }
+    .infopic3{
+        
+        width:38%; 
+        height: 450px;
+        right: 26%;
+    }
+    
+    .infodit{
+        width:38%; 
+        height: 450px;
+    }
+    .infodit2{
+        width:38%; 
+        height: 450px;
+        left: 12%;
+    }
+    .infodit3{
+        width:38%; 
+        height: 450px;
+    }
+    
+}
+@media all and (max-width:1460px){
+    
+    .infopic{
+        width: 40%;
+        right: 30%;
+    }
+    .infopic2 img{
+        
+        width: 40%;
+    }
+    .infopic3{
+        right: 30%;
+        width: 40%;
+    }
+    
+    .infodit{
+        width: 40%;
+    }
+    .infodit2{
+        width: 40%;
+        left: 10%;
+    }
+    .infodit3{
+        width: 40%;
+    }
+    
+    
+}
+@media all and (max-width:1350px){
+    
+    .infopic{
+        height: 430px;
+        width: 45%;
+        right: 40%;
+    }
+    .infopic2 img{
+        
+        height: 430px;
+        width: 45%;
+    }
+    .infopic3{
+        height: 430px;
+        width: 45%;
+        right: 40%;right: 40%;
+    }
+    
+    .infodit{
+        height: 430px;
+        width: 45%;
+        
+    }
+    .infodit2{
+        height: 430px;
+        width: 45%;
+        left: 5%;
+    }
+    .infodit3{
+        height: 430px;
+        width: 45%;
+    }
+    
+    .button{
+        top: 320px;
+    }
+    
+    .infodit p{
+        
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .infodit2 p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .infodit3 p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .infodit h1{
+        margin-bottom: 30px;
+    }
+    .infodit2 h1{
+        margin-bottom: 30px;
+    }
+    .infodit3 h1{
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width:1190px){
+    
+    .infopic{
+        height: 430px;
+        width: 45%;
+        right: 40%;
+    }
+    .infopic2 img{
+        
+        height: 430px;
+        width: 45%;
+    }
+    .infopic3{
+        height: 430px;
+        width: 45%;
+        right: 40%;right: 40%;
+    }
+    
+    .infodit{
+        height: 430px;
+        width: 45%;
+        
+    }
+    .infodit2{
+        height: 430px;
+        width: 45%;
+        left: 5%;
+    }
+    .infodit3{
+        height: 430px;
+        width: 45%;
+    }
+    
+    .button{
+        top: 320px;
+    }
+    
+    .infodit p{
+        
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .infodit2 p{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .infodit3 p{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    
+    
+}
+@media all and (max-width:1053px){
+    
+    .infopic{
+        height: 400px;
+        width: 45%;
+        right: 40%;
+    }
+    .infopic2 img{
+        
+        height: 400px;
+        width: 45%;
+    }
+    .infopic3{
+        height: 400px;
+        width: 45%;
+        right: 40%;
+    }
+    
+    .infodit{
+        height: 400px;
+        width: 45%;
+        
+    }
+    .infodit2{
+        height: 400px;
+        width: 45%;
+        left: 5%;
+    }
+    .infodit3{
+        height: 400px;
+        width: 45%;
+    }
+    
+    .button{
+        top: 305px;
+    }
+    
+    .infodit p{
+        width: 90%;
+        left: 5%;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .infodit2 p{
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .infodit3 p{
+        font-size: 21px;
+        line-height: 28px;
+    }
+    
+    .infodit h1{
+        margin-bottom: 20px;
+    }
+    .infodit2 h1{
+        margin-bottom: 20px;
+    }
+    .infodit3 h1{
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width:970px){
+    
+    .button{
+        top: 320px;
+    }
+    
+    .infodit h1{
+        margin-bottom: 15px;
+    }
+    .infodit2 h1{
+        margin-bottom: 15px;
+    }
+    .infodit3 h1{
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width:900px){
+    
+    .infopic{
+        height: 360px;
+    }
+    .infopic2 img{
+        
+        height: 360px;
+    }
+    .infopic3{
+        height: 360px;
+    }
+    
+    .infodit{
+        height: 360px;
+        
+    }
+    .infodit2{
+        height: 360px;
+    }
+    .infodit3{
+        height: 360px;
+    }
+    
+    .button{
+        top: 300px;
+        height: 45px;
+        width: 38%;
+        right: 31%;
+        
+    }
+    .button h1{
+        top: 3px;
+        font-size: 30px;
+    }
+    
+    .infodit p{
+       
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .infodit2 p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .infodit3 p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .infodit h1{
+        font-size: 35px;
+    }
+    .infodit2 h1{
+        font-size: 35px;
+    }
+    .infodit3 h1{
+        font-size: 35px;
+    }
+}
+@media all and (max-width:750px){
+    .info{
+        display:table-row-group;
+    }
+    
+    .infopic{
+        width:80%; 
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 840px;
+    }
+    .infopic2 img{
+        width:80%; 
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 1790px;
+        
+    }
+    .infopic3{
+       width:80%; 
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 2540px;
+    }
+    
+    .infodit{
+        width:80%; 
+        left:10%;
+        margin-bottom: 450px;
+        height: 300px;
+    }
+    .infodit2{
+        width:80%; 
+        left:10%;
+        margin-bottom: 450px;
+        height: 300px;
+    }
+    .infodit3{
+         width:80%; 
+        left:10%;
+        margin-bottom: 450px;
+        height: 300px;
+    }
+    
+    .button{
+        top:230px;
+    }
+}
+
+@media all and (max-width:580px){
+    .infodit p{
+       
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .infodit2 p{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .infodit3 p{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .button{
+        top: 250px;
+        height: 36px;
+    }
+    .button h1{
+        top: 1.5px;
+        font-size: 28px;
+    }
+}
+@media all and (max-width:550px){
+  .infopic{
+        top: 790px;
+    }
+    .infopic2 img{
+        width:80%; 
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 1690px;
+        
+    }
+    .infopic3{
+       width:80%; 
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 2440px;
+    }  
+    
+    .infodit{
+        margin-bottom: 400px;
+    }
+    .infodit2 img{
+        margin-bottom: 400px;
+    }
+    .infodit3{
+       margin-bottom: 400px;
+    }  
+}
+@media all and (max-width:500px){
+  .infopic{
+        top: 740px;
+      width:86% ;
+      left: 7%;
+    }
+    .infopic2 img{
+        width:86% ;
+      left: 7%;
+        height: 300px;
+        position: absolute;
+        top: 1640px;
+        
+    }
+    .infopic3{
+       width:86% ;
+      left: 7%; 
+        height: 300px;
+        
+        position: absolute;
+        top: 2390px;
+    }  
+    
+    .infodit p{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .infodit2 p{
+        font-size: 19px;
+        line-height: 23px; 
+    }
+    .infodit3 p{
+        font-size: 19px;
+        line-height: 23px; 
+    }
+    
+    .infodit {
+         width:86% ;
+      left: 7%; 
+    }
+    .infodit2 {
+         width:86% ;
+      left: 7%;  
+    }
+    .infodit3 {
+         width:86% ;
+      left: 7%; 
+    }
+    
+    .infodit h1{
+        font-size: 33px;
+    }
+    .infodit2 h1{
+        font-size: 33px;
+    }
+    .infodit3 h1{
+        font-size: 33px;
+    }
+    
+      .button h1{
+        top: 1.5px;
+        font-size: 28px;
+    }
+}
+@media all and (max-width:470px){
+  
+    .infodit {
+        margin-top: 110px;
+    }
+    
+    .infopic{
+        top: 650px;
+      width:86% ;
+        height: 270px;
+      left: 7%;
+    }
+    .infopic2 img{
+        width:86% ;
+      left: 7%;
+        height: 300px;
+        position: absolute;
+        top: 1550px;
+        
+    }
+    .infopic3{
+       width:86% ;
+      left: 7%; 
+        height: 300px;
+        
+        position: absolute;
+        top: 2300px;
+    }  
+    
+    .infodit p{
+        font-size: 17px;
+        line-height: 22px;
+        top: 20px;
+    }
+    .infodit2 p{
+        font-size: 17px;
+        line-height: 22px; 
+        top: 20px;
+    }
+    .infodit3 p{
+        font-size: 17px;
+        line-height: 22px;
+            top: 20px; 
+    }
+
+    
+    .infodit h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        top: 20px;
+    }
+    .infodit2 h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        top: 20px;
+    }
+    .infodit3 h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        top: 20px;
+    }
+    
+      .button h1{
+        top: 1.5px;
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
